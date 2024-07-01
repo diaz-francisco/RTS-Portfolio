@@ -30,7 +30,7 @@ body {
 .content {
   position: absolute;
   right: 50px;
-  top: 60%;
+  top: 50%;
   bottom: auto;
   display: flex;
   align-items: center;
@@ -62,6 +62,11 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+}
+
+.links {
+  position: absolute;
+  display: flex;
 }
 
 p {
