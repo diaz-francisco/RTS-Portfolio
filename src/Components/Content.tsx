@@ -15,10 +15,14 @@ export default function Content() {
           <Projects />
         </li>
         <li>
-          <h1>About Me</h1>
+          <h1>
+            <a>About Me</a>
+          </h1>
         </li>
         <li>
-          <h1>Contact</h1>
+          <h1>
+            <a>Contact</a>
+          </h1>
         </li>
       </ul>
     </>

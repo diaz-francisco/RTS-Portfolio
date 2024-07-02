@@ -2,7 +2,8 @@ export default function Logo() {
   return (
     <>
       <div className="logo">
-        <p>Logo</p>
+        <h1>Francisco Diaz</h1>
+        <p>Web Developer</p>
       </div>
     </>
   );

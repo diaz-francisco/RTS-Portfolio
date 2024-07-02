@@ -1,9 +1,14 @@
 export default function Links() {
   return (
     <>
-      <a href="google.com">Filler</a>
-      <a href="google.com">Filler</a>
-      <a href="google.com">Filler</a>
+      <div className="links">
+        <a href="https://github.com/MrCheks" target="_blank">
+          <img
+            src="https://github.githubassets.com/assets/GitHub-Mark-ea2971cee799.png"
+            alt="github"
+          />
+        </a>
+      </div>
     </>
   );
 }

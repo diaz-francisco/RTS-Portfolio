@@ -12,7 +12,6 @@ function App() {
       <Links />
       <div className="container">
         <DisplayArea />
-
         <Content />
       </div>
     </>

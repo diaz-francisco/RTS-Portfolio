@@ -1,8 +1,10 @@
 export default function Projects() {
   return (
     <>
-      <h1>Projects</h1>
-      <ul className="projects">
+      <h1>
+        <a href="https://google.com">Projects</a>
+      </h1>
+      {/* <ul className="projects">
         <li>
           <p>
             <a href="google.com">Project 1</a>
@@ -18,7 +20,7 @@ export default function Projects() {
             <a href="google.com">Project 3</a>
           </p>
         </li>
-      </ul>
+      </ul> */}
     </>
   );
 }
