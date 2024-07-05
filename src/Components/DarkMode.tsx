@@ -4,10 +4,10 @@ export default function DarkMode() {
       <div className="dark-mode">
         <div>
           <p className="rotate">Light</p>
-          <button></button>
+          <button> </button>
         </div>
         <div>
-          <p>D</p>
+          <p className="rotate">Dark</p>
           <button></button>
         </div>
       </div>

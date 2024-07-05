@@ -14,55 +14,54 @@ body {
 } */
 
 .container {
-  position: absolute;
   display: flex;
-  top: 3px;
-  bottom: 3px;
   border: solid 0.3px rgb(216, 207, 207);
   margin: 20px;
   overflow: auto;
+  height: 95vh;
 }
 
 .display {
   display: flex;
   width: 100%;
-  height: 725px;
-  max-width: 60%;
-  margin-left: 5vw;
-  margin-top: 3%;
+  max-width: 70%;
+  height: 625px;
+  margin-top: 125px;
+  margin-left: 25%;
   border: solid 3px blue;
   justify-content: center;
   align-items: center;
   flex: 1;
-  padding: 10px;
+  padding: 20px;
 }
 
 .content {
   position: absolute;
-  right: 25px;
-  bottom: 125px;
+  top: 35px;
+  left: -10px;
   display: flex;
   align-items: center;
   flex-direction: column;
   font-size: small;
   margin: auto;
   padding: auto;
-  font-size: 8px;
+  font-size: 9px;
 }
 
 .logo {
   position: absolute;
-  right: 50px;
-  bottom: 25px;
+  right: 40px;
+  top: 30px;
+  font-size: 10px;
 }
 
 .dark-mode {
   position: absolute;
-  top: 23px;
-  right: 2px;
+  top: 3px;
+  right: 4px;
   display: flex;
   flex-direction: column;
-  border: solid 2px red;
+  /* background: linear-gradient(black, white); */
 }
 /* .projects {
   margin-left: -40px;
@@ -75,10 +74,11 @@ body {
 
 .links {
   position: absolute;
-  top: 50px;
-  right: 50px;
+  bottom: 40px;
+  left: 30px;
   display: flex;
   padding: 10px;
+  z-index: 1;
 }
 
 .rotate {
@@ -121,4 +121,31 @@ img {
 
 img:hover {
   transform: scale(1.1);
+}
+
+@media (min-width: 1080px) {
+  .container {
+    margin: 2%;
+    height: 92vh;
+  }
+
+  .content {
+    top: 50px;
+    left: 10px;
+  }
+
+  .dark-mode {
+    top: 20px;
+    right: 8px;
+    width: 1vw;
+  }
+
+  .logo {
+    font-size: 15px;
+  }
+
+  .links {
+    bottom: 50px;
+    left: 50px;
+  }
 }
