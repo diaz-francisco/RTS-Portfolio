@@ -1,19 +1,11 @@
-import Content from "./Components/Content";
 import DarkMode from "./Components/DarkMode";
-import DisplayArea from "./Components/DisplayArea";
-import Links from "./Components/Links";
-import Logo from "./Components/Logo";
+import Screen from "./Components/Screen";
 
 function App() {
   return (
     <>
-      <Logo />
+      <Screen />
       <DarkMode />
-      <Links />
-      <div className="container">
-        <DisplayArea />
-        <Content />
-      </div>
     </>
   );
 }

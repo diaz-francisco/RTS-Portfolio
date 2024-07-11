@@ -1,9 +1,11 @@
 export default function Home() {
   return (
-    <div className="display">
-      <h1></h1>
-
-      <p>hello</p>
+    <div className="home">
+      <p>
+        This is a test sentence to make sure the margin and padding are correct.
+        _ This is a test sentence to make sure the margin and padding are
+        correct.
+      </p>
     </div>
   );
 }

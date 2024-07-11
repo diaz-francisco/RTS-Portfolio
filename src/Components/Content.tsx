@@ -12,16 +12,16 @@ export default function Content() {
           </h1>
         </li>
         <li>
+          <h1>
+            <a style={{ fontSize: "18px" }}>Contact</a>
+          </h1>
+        </li>
+        <li>
           <Projects />
         </li>
         <li>
           <h1>
-            <a>About Me</a>
-          </h1>
-        </li>
-        <li>
-          <h1>
-            <a>Contact</a>
+            <a style={{ fontSize: "21px" }}>About Me</a>
           </h1>
         </li>
       </ul>

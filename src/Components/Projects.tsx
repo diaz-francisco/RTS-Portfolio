@@ -2,7 +2,9 @@ export default function Projects() {
   return (
     <>
       <h1>
-        <a href="https://google.com">Projects</a>
+        <a style={{ fontSize: "20px" }} href="https://google.com">
+          Projects
+        </a>
       </h1>
       {/* <ul className="projects">
         <li>

@@ -3,15 +3,8 @@ body {
   margin: 0;
   color: #ffffff;
   background-color: rgba(0, 0, 0, 0.9);
+  overflow: hidden;
 }
-
-/* .container {
-  display: flex;
-  height: 95vh;
-  border: solid 0.5px white;
-  margin: 20px;
-  overflow: auto;
-} */
 
 .container {
   display: flex;
@@ -21,26 +14,25 @@ body {
   height: 95vh;
 }
 
-.display {
+.home {
   display: flex;
-  width: 100%;
-  max-width: 70%;
-  height: 625px;
-  margin-top: 125px;
-  margin-left: 25%;
-  border: solid 3px blue;
-  justify-content: center;
-  align-items: center;
-  flex: 1;
-  padding: 20px;
+  position: absolute;
+  top: 0px;
+  right: 15px;
+  max-width: 25%;
+  height: 300px;
+  justify-content: right;
+  align-items: baseline;
+  text-align: end;
+  margin: 20px;
 }
 
 .content {
   position: absolute;
-  top: 35px;
+  bottom: 100px;
   left: -10px;
   display: flex;
-  align-items: center;
+  align-items: baseline;
   flex-direction: column;
   font-size: small;
   margin: auto;
@@ -50,8 +42,8 @@ body {
 
 .logo {
   position: absolute;
-  right: 40px;
-  top: 30px;
+  left: 30px;
+  bottom: 35px;
   font-size: 10px;
 }
 
@@ -63,14 +55,6 @@ body {
   flex-direction: column;
   /* background: linear-gradient(black, white); */
 }
-/* .projects {
-  margin-left: -40px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  font-size: 15px;
-} */
 
 .links {
   position: absolute;
@@ -85,10 +69,6 @@ body {
   rotate: 90deg;
   width: 10px;
   padding-bottom: 5px;
-}
-
-p {
-  text-align: center;
 }
 
 a {
@@ -140,7 +120,10 @@ img:hover {
     width: 1vw;
   }
 
-  .logo {
+  .home {
+    top: 15px;
+    right: 30px;
+    max-width: 10%;
     font-size: 15px;
   }
 
