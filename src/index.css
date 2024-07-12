@@ -27,6 +27,45 @@ body {
   margin: 20px;
 }
 
+/* .random-patches {
+  position: relative;
+  width: 92%;
+  height: 95vh;
+  overflow: hidden;
+}
+
+.random-patches::before,
+.random-patches::after {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, #000 10%, transparent 40%),
+    radial-gradient(circle, #fff 10%, transparent 40%),
+    radial-gradient(circle, #777 10%, transparent 40%);
+  background-repeat: no-repeat;
+  background-position: 0 0, 50% 50%, 25% 25%;
+  animation: bubbleAnimation 20s infinite linear;
+}
+
+.random-patches::after {
+  animation-delay: -10s;
+}
+
+@keyframes bubbleAnimation {
+  0%,
+  100% {
+    background-size: 25%, 50%, 75%;
+    opacity: 0.5;
+  }
+  50% {
+    background-size: 50%, 100%, 150%;
+    opacity: 0.1;
+  }
+} */
+
 .content {
   position: absolute;
   bottom: 100px;
@@ -110,8 +149,13 @@ img:hover {
   }
 
   .content {
-    top: 50px;
-    left: 10px;
+    bottom: 110px;
+    left: 15px;
+  }
+
+  .logo {
+    left: 55px;
+    bottom: 45px;
   }
 
   .dark-mode {
@@ -122,9 +166,10 @@ img:hover {
 
   .home {
     top: 15px;
-    right: 30px;
-    max-width: 10%;
+    right: 35px;
+    max-width: 8%;
     font-size: 15px;
+    max-width: 7vw;
   }
 
   .links {

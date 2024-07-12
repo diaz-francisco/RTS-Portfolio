@@ -6,7 +6,7 @@ export default function Screen() {
   return (
     <>
       <Logo />
-      <div className="container">
+      <div className="container random-patches">
         <DisplayArea />
         <Content />
       </div>
