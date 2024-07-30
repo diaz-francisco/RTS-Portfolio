@@ -1,28 +1,25 @@
 export default function Projects() {
   return (
     <>
-      <h1>
-        <a style={{ fontSize: "20px" }} href="https://google.com">
-          Projects
-        </a>
-      </h1>
-      {/* <ul className="projects">
-        <li>
-          <p>
-            <a href="google.com">Project 1</a>
-          </p>
-        </li>
-        <li>
-          <p>
-            <a href="google.com">Project 2</a>
-          </p>
-        </li>
-        <li>
-          <p>
-            <a href="google.com">Project 3</a>
-          </p>
-        </li>
-      </ul> */}
+      <div className="projects">
+        <ul>
+          <li>
+            <p>
+              <a>Project 1</a>
+            </p>
+          </li>
+          <li>
+            <p>
+              <a>Project 2</a>
+            </p>
+          </li>
+          <li>
+            <p>
+              <a>Project 3</a>
+            </p>
+          </li>
+        </ul>
+      </div>
     </>
   );
 }

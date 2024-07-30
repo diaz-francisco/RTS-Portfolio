@@ -2,74 +2,67 @@ body {
   padding: 0;
   margin: 0;
   color: #ffffff;
-  background-color: rgba(0, 0, 0, 0.9);
+  background-color: rgba(0, 0, 0, 1);
   overflow: hidden;
+  font-family: "Courier New", Courier, monospace;
 }
 
 .container {
+  position: relative;
   display: flex;
   border: solid 0.3px rgb(216, 207, 207);
   margin: 20px;
   overflow: auto;
   height: 95vh;
+  opacity: 1;
+  overflow: hidden;
+}
+
+.static {
+  position: absolute;
+  background-image: url("assets/dark-static.jpg");
+  inset: -200%;
+  opacity: 25%;
+  flex-grow: 1;
+}
+
+.animated {
+  position: absolute;
+  background-image: url("assets/static.png");
+  inset: -200%;
+  opacity: 30%;
+  animation: noise 0.4s linear infinite both;
+  z-index: -1;
+}
+
+@keyframes noise {
+  0% {
+    transform: translateX(0.4%) translateY(0.4%);
+  }
+
+  100% {
+    transform: translateX(-0.4%) translateY(-0.4%);
+  }
 }
 
 .home {
   display: flex;
   position: absolute;
-  top: 0px;
-  right: 15px;
+  top: -15px;
+  right: 0px;
   max-width: 25%;
   height: 300px;
   justify-content: right;
   align-items: baseline;
   text-align: end;
   margin: 20px;
+  font-size: 15px;
 }
-
-/* .random-patches {
-  position: relative;
-  width: 92%;
-  height: 95vh;
-  overflow: hidden;
-}
-
-.random-patches::before,
-.random-patches::after {
-  content: "";
-  position: absolute;
-  top: -50%;
-  left: -50%;
-  width: 200%;
-  height: 200%;
-  background: radial-gradient(circle, #000 10%, transparent 40%),
-    radial-gradient(circle, #fff 10%, transparent 40%),
-    radial-gradient(circle, #777 10%, transparent 40%);
-  background-repeat: no-repeat;
-  background-position: 0 0, 50% 50%, 25% 25%;
-  animation: bubbleAnimation 20s infinite linear;
-}
-
-.random-patches::after {
-  animation-delay: -10s;
-}
-
-@keyframes bubbleAnimation {
-  0%,
-  100% {
-    background-size: 25%, 50%, 75%;
-    opacity: 0.5;
-  }
-  50% {
-    background-size: 50%, 100%, 150%;
-    opacity: 0.1;
-  }
-} */
 
 .content {
   position: absolute;
-  bottom: 100px;
-  left: -10px;
+  bottom: 80px;
+  left: -30px;
   display: flex;
   align-items: baseline;
   flex-direction: column;
@@ -92,7 +85,13 @@ body {
   right: 4px;
   display: flex;
   flex-direction: column;
-  /* background: linear-gradient(black, white); */
+  align-items: center;
+}
+
+.rotate {
+  transform: rotate(90deg);
+  width: 6px;
+  padding-bottom: 5px;
 }
 
 .links {
@@ -104,10 +103,19 @@ body {
   z-index: 1;
 }
 
-.rotate {
-  rotate: 90deg;
-  width: 10px;
-  padding-bottom: 5px;
+.projects {
+  border: solid 1px blue;
+  display: flex;
+  position: absolute;
+  top: -15px;
+  right: 0px;
+  max-width: 35%;
+  height: 300px;
+  justify-content: right;
+  align-items: baseline;
+  text-align: end;
+  margin: 20px;
+  font-size: 15px;
 }
 
 a {
@@ -149,8 +157,8 @@ img:hover {
   }
 
   .content {
-    bottom: 110px;
-    left: 15px;
+    bottom: 75px;
+    left: -20px;
   }
 
   .logo {
@@ -160,13 +168,13 @@ img:hover {
 
   .dark-mode {
     top: 20px;
-    right: 8px;
+    right: 10px;
     width: 1vw;
   }
 
   .home {
-    top: 15px;
-    right: 35px;
+    top: -20px;
+    right: 0px;
     max-width: 8%;
     font-size: 15px;
     max-width: 7vw;
