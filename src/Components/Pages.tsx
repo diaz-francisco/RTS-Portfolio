@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
 import Home from "./Home";
 import Contact from "./Contact";
 import Projects from "./Projects";
-import AboutMe from "./AboutMe";
+// import AboutMe from "./AboutMe";
 
 export default function Pages() {
   return (
@@ -36,14 +36,14 @@ export default function Pages() {
                   Projects
                 </Link>
               </li>
-              <li>
+              {/* <li>
                 <Link
                   to={"/aboutme"}
                   style={{ fontSize: "22px", marginBottom: "0px" }}
                 >
                   About Me
                 </Link>
-              </li>
+              </li> */}
             </ul>
           </nav>
 
@@ -51,7 +51,7 @@ export default function Pages() {
             <Route path="/" element={<Home />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/projects" element={<Projects />} />
-            <Route path="/aboutme" element={<AboutMe />} />
+            {/* <Route path="/aboutme" element={<AboutMe />} /> */}
           </Routes>
         </div>
       </Router>

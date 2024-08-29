@@ -68,7 +68,7 @@ body {
 
 .content {
   position: absolute;
-  bottom: 80px;
+  bottom: 70px;
   left: -30px;
   display: flex;
   align-items: baseline;
@@ -94,8 +94,8 @@ body {
 
 .links {
   position: absolute;
-  bottom: 40px;
-  left: 30px;
+  top: 40px;
+  right: 30px;
   display: flex;
   padding: 10px;
   z-index: 1;
@@ -143,6 +143,7 @@ img {
   height: 40px;
   width: 40px;
   border-radius: 50px;
+  margin: 10px;
 }
 
 img:hover {
@@ -156,7 +157,7 @@ img:hover {
   }
 
   .content {
-    bottom: 75px;
+    bottom: 65px;
     left: -20px;
   }
 
@@ -170,7 +171,7 @@ img:hover {
     right: 0px;
     max-width: 8%;
     font-size: 15px;
-    max-width: 7vw;
+    max-width: 10vw;
   }
 
   .links {
@@ -181,6 +182,6 @@ img:hover {
   .switch {
     position: absolute;
     top: 10px;
-    right: 12px;
+    right: 16px;
   }
 }
