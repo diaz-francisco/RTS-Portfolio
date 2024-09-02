@@ -5,17 +5,17 @@ export default function Projects() {
         <ul>
           <li>
             <p>
-              <a>Project 1</a>
+              <a>Cinnemon</a>
             </p>
           </li>
           <li>
             <p>
-              <a>Project 2</a>
+              <a> Guess the Flag</a>
             </p>
           </li>
           <li>
             <p>
-              <a>Project 3</a>
+              <a>Checklist</a>
             </p>
           </li>
         </ul>
