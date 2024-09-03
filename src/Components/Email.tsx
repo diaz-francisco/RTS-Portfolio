@@ -28,7 +28,21 @@ export const Email = () => {
   };
 
   return (
-    <form ref={form} onSubmit={sendEmail}>
+    <form
+      className=""
+      ref={form}
+      onSubmit={sendEmail}
+      style={{
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "center",
+        position: "absolute",
+        right: "10px",
+        top: "200px",
+        border: "solid 1px green",
+        backgroundColor: "green",
+      }}
+    >
       <label>Name</label>
       <input type="text" name="from_name" />
       <label>Email</label>
