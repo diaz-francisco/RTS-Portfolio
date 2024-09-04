@@ -8,48 +8,50 @@ export const Email = () => {
     e.preventDefault();
 
     if (form.current) {
-      emailjs
-        .sendForm(
-          "gmail",
-          "template_m3wm0d7",
-          form.current,
-          "CPuv4HPXcdprxva8s"
-        )
-        .then(
-          () => {
-            console.log("SUCCESS!");
-          },
-          (error) => {
-            console.log("FAILED...", error.text);
-          }
-        );
+      emailjs.sendForm(
+        "gmail",
+        "template_m3wm0d7",
+        form.current,
+        "CPuv4HPXcdprxva8s"
+      );
       form.current.reset();
     }
   };
 
   return (
-    <form
-      className=""
-      ref={form}
-      onSubmit={sendEmail}
+    <div
       style={{
-        display: "flex",
-        flexDirection: "column",
-        alignItems: "center",
-        position: "absolute",
-        right: "10px",
-        top: "200px",
-        border: "solid 1px green",
-        backgroundColor: "green",
+        border: "solid 1px red",
       }}
     >
-      <label>Name</label>
-      <input type="text" name="from_name" />
-      <label>Email</label>
-      <input type="email" name="email" />
-      <label>Message</label>
-      <textarea name="message" />
-      <input type="submit" value="Send" />
-    </form>
+      <h1>Get in touch with me</h1>
+      <p>
+        For any business inquireis and emplyoment opportunities please contact
+        me below.
+      </p>
+      <form
+        className=""
+        ref={form}
+        onSubmit={sendEmail}
+        style={{
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "center",
+          position: "absolute",
+          right: "10px",
+          top: "200px",
+          backgroundColor: "grey",
+          padding: "10px",
+          maxWidth: "200px",
+          borderRadius: "3px",
+          border: "solid 1px blue",
+        }}
+      >
+        <input type="email" name="email" placeholder="Email" required />
+        <input type="text" name="from_name" placeholder="Name" />
+        <textarea name="message" placeholder="Message" />
+        <input type="submit" value="send" />
+      </form>
+    </div>
   );
 };

@@ -3,7 +3,7 @@ export default function Logo() {
     <>
       <div className="logo">
         <h1>Francisco Diaz</h1>
-        <p className="smaller">Web Developer</p>
+        <p className="smaller">Software Engineer</p>
       </div>
     </>
   );
