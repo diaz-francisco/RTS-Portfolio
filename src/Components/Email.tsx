@@ -19,19 +19,27 @@ export const Email = () => {
   };
 
   return (
-    <div>
-      <div className="emailheader">
-        <h1>Get in touch with me!</h1>
-        <p>
-          For any business inquireis or emplyoment opportunities please contact
-          me below.
-        </p>
-      </div>
+    <div className="fade-in">
       <form className="emailform" ref={form} onSubmit={sendEmail}>
         <input type="email" name="email" placeholder="Email" required />
-        <input type="text" name="from_name" placeholder="Name" required />
-        <textarea name="message" placeholder="Message" required />
-        <input type="submit" value="send" />
+        <input type="text" name="subject" placeholder="Subject" required />
+        <textarea
+          name="message"
+          placeholder="If you have any business inquiries or employment opportunities, feel free to contact me."
+          required
+        />
+        <input
+          type="submit"
+          value="Submit"
+          style={{
+            width: "25%",
+            borderRadius: "0px",
+            background: "black",
+            color: "white",
+            marginTop: "10px",
+            marginBottom: "0",
+          }}
+        />
       </form>
     </div>
   );

@@ -11,7 +11,7 @@ export default function Links() {
 
   return (
     <>
-      <div>
+      <div className="fade-in">
         <div
           style={{
             display: "flex",
@@ -30,7 +30,7 @@ export default function Links() {
                 right: "60px",
               }}
               src="https://github.githubassets.com/assets/GitHub-Mark-ea2971cee799.png"
-              alt="github"
+              alt="github icon"
             />
           </a>
           <a
@@ -44,10 +44,10 @@ export default function Links() {
                 right: "60px",
               }}
               src="https://i.pinimg.com/564x/1a/92/91/1a9291b12d642cb2fa8aa8fbef5c7be1.jpg"
-              alt="linkedin"
+              alt="linkedin icon"
             />
           </a>
-          <a href="">
+          <a href="" onClick={handleClick}>
             <img
               style={{
                 width: "50px",
@@ -55,7 +55,7 @@ export default function Links() {
                 right: "60px",
               }}
               src="https://i.pinimg.com/originals/32/5a/4b/325a4bd7b5041b4455e9a0b64c92190d.png"
-              onClick={handleClick}
+              alt="gmail icon"
             />
           </a>
         </div>

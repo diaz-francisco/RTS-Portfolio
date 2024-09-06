@@ -9,7 +9,7 @@ export default function Pages() {
   return (
     <>
       <Router>
-        <div>
+        <div className="fade-in">
           <nav>
             <ul className="content">
               <li>

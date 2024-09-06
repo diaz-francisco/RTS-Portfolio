@@ -1,9 +1,9 @@
 export default function Logo() {
   return (
     <>
-      <div className="logo">
+      <div className="logo fade-in">
         <h1>Francisco Diaz</h1>
-        <p className="smaller">Software Engineer</p>
+        <p style={{ fontSize: "10px" }}>Software Engineer</p>
       </div>
     </>
   );

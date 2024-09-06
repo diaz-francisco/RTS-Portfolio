@@ -1,22 +1,21 @@
 export default function Projects() {
   return (
     <>
-      <div className="projects">
+      <div className="projects fade-in">
         <ul>
           <li>
-            <p>
-              <a>Cinnemon</a>
-            </p>
+            <a>
+              <h1>Cinnemon</h1>
+            </a>
+            <p>Cinnemon is a React application</p>
           </li>
           <li>
-            <p>
-              <a> Guess the Flag</a>
-            </p>
+            <h1>FlagGuesser</h1>
+            <p>A Vanilla JS project</p>
           </li>
           <li>
-            <p>
-              <a>Checklist</a>
-            </p>
+            <h1>To-Do App</h1>
+            <p>A TypeScript + React project</p>
           </li>
         </ul>
       </div>

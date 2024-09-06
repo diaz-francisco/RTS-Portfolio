@@ -79,7 +79,7 @@ body {
 
 .logo {
   position: absolute;
-  left: 30px;
+  left: 32px;
   bottom: 35px;
   font-size: 10px;
 }
@@ -91,28 +91,16 @@ body {
 }
 
 .projects {
-  border: solid 1px blue;
-  display: flex;
-  position: absolute;
-  top: -15px;
-  right: 0px;
-  max-width: 35%;
-  height: 300px;
-  justify-content: right;
-  align-items: baseline;
-  text-align: end;
-  margin: 20px;
-  font-size: 15px;
-}
-
-.emailheader {
-  width: 350px;
-  font-size: 12px;
   display: flex;
   flex-direction: column;
   position: absolute;
-  top: 0px;
-  left: 20px;
+  top: -15px;
+  right: 0px;
+  width: 50%;
+  height: 50%;
+  text-align: end;
+  margin: 20px;
+  font-size: 15px;
 }
 
 .emailform {
@@ -122,9 +110,9 @@ body {
   position: absolute;
   right: 0px;
   bottom: 0px;
-  background-color: grey;
+  background-color: #737473;
   padding: 10px;
-  max-width: 200px;
+  max-width: 225px;
   border-radius: 3px;
 }
 
@@ -178,10 +166,10 @@ form {
 }
 
 textarea {
-  max-width: 200px;
-  min-width: 200px;
-  max-height: 200px;
-  min-height: 200px;
+  max-width: 225px;
+  min-width: 225px;
+  max-height: 225px;
+  min-height: 225px;
   margin-top: 5px;
 }
 
@@ -198,12 +186,12 @@ textarea {
   }
 
   .content {
-    bottom: 135px;
+    bottom: 105px;
     left: -20px;
   }
 
   .logo {
-    left: 60px;
+    left: 55px;
     bottom: 45px;
     font-size: 20px;
   }
@@ -225,11 +213,6 @@ textarea {
     position: absolute;
     top: 15px;
     right: 20px;
-  }
-
-  .emailheader {
-    width: 600px;
-    font-size: 20px;
   }
 
   .emailform {
