@@ -4,16 +4,23 @@ import { useState } from "react";
 export default function Links() {
   const [isFormVisible, setIsFormVisible] = useState(false);
 
-  const handleClick = () => {
-    setIsFormVisible(true);
+  const handleClick = (event: React.MouseEvent) => {
+    setIsFormVisible((prevState) => !prevState);
+    event.preventDefault();
   };
 
   return (
     <>
       <div>
         <div
-          className="links"
-          style={{ display: "flex", flexDirection: "column" }}
+          style={{
+            display: "flex",
+            flexDirection: "column",
+            position: "absolute",
+            top: "20px",
+            right: "10px",
+            padding: "10px",
+          }}
         >
           <a href="https://github.com/MrCheks" target="_blank">
             <img

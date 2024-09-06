@@ -4,7 +4,8 @@ import Pages from "./Pages";
 export default function Content() {
   const [mode, setMode] = useState("animated");
 
-  const handleClick = () => {
+  const handleClick = (event: React.MouseEvent<HTMLButtonElement>) => {
+    event.preventDefault();
     setMode((newmode) => (newmode === "animated" ? "static" : "animated"));
   };
 

@@ -19,37 +19,18 @@ export const Email = () => {
   };
 
   return (
-    <div
-      style={{
-        border: "solid 1px red",
-      }}
-    >
-      <h1>Get in touch with me</h1>
-      <p>
-        For any business inquireis and emplyoment opportunities please contact
-        me below.
-      </p>
-      <form
-        className=""
-        ref={form}
-        onSubmit={sendEmail}
-        style={{
-          display: "flex",
-          flexDirection: "column",
-          alignItems: "center",
-          position: "absolute",
-          right: "10px",
-          top: "200px",
-          backgroundColor: "grey",
-          padding: "10px",
-          maxWidth: "200px",
-          borderRadius: "3px",
-          border: "solid 1px blue",
-        }}
-      >
+    <div>
+      <div className="emailheader">
+        <h1>Get in touch with me!</h1>
+        <p>
+          For any business inquireis or emplyoment opportunities please contact
+          me below.
+        </p>
+      </div>
+      <form className="emailform" ref={form} onSubmit={sendEmail}>
         <input type="email" name="email" placeholder="Email" required />
-        <input type="text" name="from_name" placeholder="Name" />
-        <textarea name="message" placeholder="Message" />
+        <input type="text" name="from_name" placeholder="Name" required />
+        <textarea name="message" placeholder="Message" required />
         <input type="submit" value="send" />
       </form>
     </div>

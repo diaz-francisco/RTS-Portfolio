@@ -59,9 +59,7 @@ body {
   right: 0px;
   max-width: 25%;
   height: 300px;
-  justify-content: right;
-  align-items: baseline;
-  text-align: end;
+  text-align: right;
   margin: 20px;
   font-size: 15px;
 }
@@ -92,16 +90,6 @@ body {
   padding-bottom: 5px;
 }
 
-.links {
-  position: absolute;
-  top: 30px;
-  right: 30px;
-  display: flex;
-  padding: 10px;
-  z-index: 1;
-  max-height: 50px;
-}
-
 .projects {
   border: solid 1px blue;
   display: flex;
@@ -115,6 +103,34 @@ body {
   text-align: end;
   margin: 20px;
   font-size: 15px;
+}
+
+.emailheader {
+  width: 350px;
+  font-size: 12px;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 0px;
+  left: 20px;
+}
+
+.emailform {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+  background-color: grey;
+  padding: 10px;
+  max-width: 200px;
+  border-radius: 3px;
+}
+
+.emailform input:focus,
+.emailform textarea:focus {
+  outline: none;
 }
 
 a {
@@ -159,7 +175,6 @@ input {
 form {
   margin: 20px;
   padding: 10px;
-  border: 1px solid #ccc;
 }
 
 textarea {
@@ -183,13 +198,14 @@ textarea {
   }
 
   .content {
-    bottom: 65px;
+    bottom: 135px;
     left: -20px;
   }
 
   .logo {
     left: 60px;
     bottom: 45px;
+    font-size: 20px;
   }
 
   .home {
@@ -209,6 +225,27 @@ textarea {
     position: absolute;
     top: 15px;
     right: 20px;
+  }
+
+  .emailheader {
+    width: 600px;
+    font-size: 20px;
+  }
+
+  .emailform {
+    bottom: 0px;
+    right: 0px;
+    left: auto;
+    top: auto;
+    min-width: 300px;
+  }
+
+  textarea {
+    max-width: 300px;
+    min-width: 300px;
+    max-height: 300px;
+    min-height: 300px;
+    margin-top: 5px;
   }
 
   img {
