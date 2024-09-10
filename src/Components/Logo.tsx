@@ -3,7 +3,7 @@ export default function Logo() {
     <>
       <div className="logo fade-in">
         <h1>Francisco Diaz</h1>
-        <p style={{ fontSize: "10px" }}>Software Engineer</p>
+        <p>Software Engineer</p>
       </div>
     </>
   );

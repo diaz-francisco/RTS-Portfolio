@@ -57,16 +57,17 @@ body {
   position: absolute;
   top: -15px;
   right: 0px;
-  max-width: 25%;
+  max-width: 35%;
   height: 300px;
   text-align: right;
   margin: 20px;
   font-size: 15px;
+  flex-direction: column;
 }
 
 .content {
   position: absolute;
-  bottom: 70px;
+  bottom: 75px;
   left: -30px;
   display: flex;
   align-items: baseline;
@@ -80,7 +81,7 @@ body {
 .logo {
   position: absolute;
   left: 32px;
-  bottom: 35px;
+  bottom: 30px;
   font-size: 10px;
 }
 
@@ -88,6 +89,21 @@ body {
   transform: rotate(90deg);
   width: 6px;
   padding-bottom: 5px;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 20px;
+  right: 10px;
+  padding: 10px;
+}
+
+.mobileIcon {
+  width: 50px;
+  height: 50px;
+  right: 60px;
 }
 
 .projects {
@@ -101,6 +117,17 @@ body {
   text-align: end;
   margin: 20px;
   font-size: 15px;
+}
+
+.aboutMe {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  text-align: right;
+  font-size: 13px;
+  max-width: 70%;
 }
 
 .emailform {
@@ -179,34 +206,29 @@ textarea {
   border: none;
 }
 
-@media (min-width: 1080px) {
+@media (min-width: 1280px) {
   .container {
     margin: 2%;
     height: 92vh;
   }
 
   .content {
-    bottom: 105px;
+    bottom: 115px;
     left: -20px;
   }
 
   .logo {
     left: 55px;
-    bottom: 45px;
-    font-size: 20px;
+    bottom: 35px;
+    font-size: 18px;
   }
 
   .home {
     top: -20px;
     right: 0px;
     max-width: 8%;
-    font-size: 15px;
+    font-size: 20px;
     max-width: 10vw;
-  }
-
-  .links {
-    bottom: 50px;
-    right: 50px;
   }
 
   .switch {
@@ -215,12 +237,22 @@ textarea {
     right: 20px;
   }
 
+  .mobileIcon {
+    height: 60px;
+    width: 60px;
+  }
+
   .emailform {
     bottom: 0px;
     right: 0px;
     left: auto;
     top: auto;
     min-width: 300px;
+  }
+
+  .aboutMe {
+    font-size: 15px;
+    max-width: 25%;
   }
 
   textarea {

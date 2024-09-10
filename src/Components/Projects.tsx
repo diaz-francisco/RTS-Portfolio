@@ -4,20 +4,25 @@ export default function Projects() {
       <div className="projects fade-in">
         <ul>
           <li>
-            <a>
+            <a href="https://github.com/MrCheks/FilmSearch" target="_blank">
               <h1>Cinnemon</h1>
             </a>
-            <p>Cinnemon is a React application</p>
+            <p>Cinnemon is a React application similar to IMDB</p>
           </li>
           <li>
-            <h1>FlagGuesser</h1>
-            <p>A Vanilla JS project</p>
-          </li>
-          <li>
-            <h1>To-Do App</h1>
-            <p>A TypeScript + React project</p>
+            <a href="https://github.com/MrCheks/GuessTheFlag" target="_blank">
+              <h1>Flagcisco</h1>
+            </a>
+            <p>
+              A Vanilla JS project where you try to guess the randomized flag
+              that was rendered.
+            </p>
           </li>
         </ul>
+        <h4>
+          Currently these projects aren't deployed. but that won't be the case
+          for long.
+        </h4>
       </div>
     </>
   );
