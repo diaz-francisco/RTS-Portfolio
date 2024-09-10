@@ -14,7 +14,7 @@ export default function Pages() {
             <ul className="content">
               <li>
                 <Link
-                  to={"/"}
+                  to={"/home"}
                   style={{ fontSize: "22px", marginBottom: "10px" }}
                 >
                   Home
@@ -48,7 +48,7 @@ export default function Pages() {
           </nav>
 
           <Routes>
-            <Route path="/" element={<Home />} />
+            <Route path="/home" element={<Home />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/projects" element={<Projects />} />
             <Route path="/aboutme" element={<AboutMe />} />
