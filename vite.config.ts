@@ -11,5 +11,5 @@ export default defineConfig({
       ext: ".gz",
     }),
   ],
-  base: "/home/",
+  base: "/RTS-Portfolio/",
 });
