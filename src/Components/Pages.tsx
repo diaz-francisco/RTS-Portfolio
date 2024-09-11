@@ -14,7 +14,7 @@ export default function Pages() {
             <ul className="content">
               <li>
                 <Link
-                  to={"/home"}
+                  to={"/RTS-Portfolio/home"}
                   style={{ fontSize: "22px", marginBottom: "10px" }}
                 >
                   Home
@@ -22,7 +22,7 @@ export default function Pages() {
               </li>
               <li>
                 <Link
-                  to={"/contact"}
+                  to={"/RTS-Portfolio/contact"}
                   style={{ fontSize: "21px", marginBottom: "10px" }}
                 >
                   Contact
@@ -30,7 +30,7 @@ export default function Pages() {
               </li>
               <li>
                 <Link
-                  to={"/projects"}
+                  to={"/RTS-Portfolio/projects"}
                   style={{ fontSize: "20px", marginBottom: "10px" }}
                 >
                   Projects
@@ -38,7 +38,7 @@ export default function Pages() {
               </li>
               <li>
                 <Link
-                  to={"/aboutme"}
+                  to={"/RTS-Portfolio/aboutme"}
                   style={{ fontSize: "21px", marginBottom: "5px" }}
                 >
                   About Me
@@ -48,10 +48,10 @@ export default function Pages() {
           </nav>
 
           <Routes>
-            <Route path="/home" element={<Home />} />
-            <Route path="/contact" element={<Contact />} />
-            <Route path="/projects" element={<Projects />} />
-            <Route path="/aboutme" element={<AboutMe />} />
+            <Route path="/RTS-Portfolio/home" element={<Home />} />
+            <Route path="/RTS-Portfolio/contact" element={<Contact />} />
+            <Route path="/RTS-Portfolio/projects" element={<Projects />} />
+            <Route path="/RTS-Portfolio/aboutme" element={<AboutMe />} />
           </Routes>
         </div>
       </Router>

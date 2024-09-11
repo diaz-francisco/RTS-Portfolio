@@ -11,7 +11,7 @@ export default function Projects() {
           </li>
           <li>
             <a href="https://github.com/MrCheks/GuessTheFlag" target="_blank">
-              <h1>Flagcisco</h1>
+              <h1 style={{ fontSize: "25px" }}>Flagcisco</h1>
             </a>
             <p>
               A Vanilla JS project where you try to guess the randomized flag

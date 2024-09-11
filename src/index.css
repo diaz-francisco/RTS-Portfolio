@@ -268,3 +268,27 @@ textarea {
     width: 50px;
   }
 }
+
+@media (min-width: 320px) {
+  .logo {
+    font-size: 10px;
+  }
+
+  .switch {
+    right: 10px;
+  }
+  button {
+    height: 13px;
+    rotate: 90deg;
+    right: -11px;
+    top: 60px;
+  }
+
+  .container {
+    height: 82vh;
+  }
+
+  .projects {
+    right: 10px;
+  }
+}
