@@ -4,7 +4,7 @@ export default function Projects() {
       <div className="projects fade-in">
         <ul>
           <li>
-            <a href="https://mrcheks.github.  io/FilmSearch/" target="_blank">
+            <a href="https://mrcheks.github.io/FilmSearch/" target="_blank">
               <h1>Cinnemon</h1>
             </a>
             <p>Cinnemon is a React application similar to IMDB</p>
