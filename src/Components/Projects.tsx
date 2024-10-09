@@ -19,10 +19,7 @@ export default function Projects() {
             </p>
           </li>
         </ul>
-        <h4>
-          Currently these projects aren't deployed. but that won't be the case
-          for long.
-        </h4>
+        <h4>Currently Flagcisco isnt deployed. but will change shortly.</h4>
       </div>
     </>
   );
