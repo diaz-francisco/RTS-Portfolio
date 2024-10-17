@@ -7,7 +7,7 @@ export default function AboutMe() {
         <p>The City of Ember, Jeanne DuPrau</p>
         <h2>What's Next?</h2>
         <p>
-          Right now I'm learning and further improving with using Node.js,
+          Right now I'm learning and further improving with using Node.js, Deno 2.0,
           Express and Python for even more opportunities down the road.
         </p>
         <h2>Who am I?</h2>
