@@ -1,3 +1,3 @@
 # React + TypeScript Portfolio
 
-Deployed at https://mrcheks.github.io/RTS-Portfolio/
+Deployed at https://diaz-francisco.github.io/contact
