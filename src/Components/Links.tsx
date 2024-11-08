@@ -13,7 +13,7 @@ export default function Links() {
     <>
       <div className="fade-in">
         <div className="links">
-          <a href="https://github.com/MrCheks" target="_blank">
+          <a href="https://github.com/diaz-francisco" target="_blank">
             <img
               className="mobileIcon"
               src="https://github.githubassets.com/assets/GitHub-Mark-ea2971cee799.png"
