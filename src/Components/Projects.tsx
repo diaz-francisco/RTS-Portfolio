@@ -18,8 +18,13 @@ export default function Projects() {
               that was rendered.
             </p>
           </li>
+          <li>
+            <a href="https://github.com/diaz-francisco/BookClub" target="_blank">
+              <h1>LetterBookd</h1>
+            </a>
+            <p>A Full-Stack web app that replicates the LetterBoxd experience but with books!</p>
+          </li>
         </ul>
-        <h4>Currently Flagcisco isnt deployed. but will change shortly.</h4>
       </div>
     </>
   );
